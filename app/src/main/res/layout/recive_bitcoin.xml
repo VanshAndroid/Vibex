@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/qrcode_iv"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                />
+
+            <TextView
+                android:id="@+id/barcodeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12we32w6hjyhghfggymfhxdftdsw"
+                android:fontFamily="@font/sailec_regular"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/big_margin_x"
+                android:layout_marginRight="@dimen/big_margin_x"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bitcoin_icon"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BTC Account"
+                        android:layout_marginLeft="@dimen/big_margin"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/sailec_regular"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="12we32w6hjyhghfggy...."
+                        android:layout_marginLeft="@dimen/big_margin"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/sailec_regular"
+                        android:drawableRight="@drawable/ic_add_black_24dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/small_margin"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/big_margin_x"
+                    >
+
+                    <EditText
+                        android:id="@+id/email_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sailec_regular"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:singleLine="true"
+                        android:hint="Amount (optional)"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:id="@+id/email_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@color/dark_gray" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NGN"
+                    android:layout_marginRight="@dimen/big_margin_x"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin_x"
+                android:layout_marginLeft="@dimen/big_margin_x"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Recive fee"
+                    android:gravity="left"
+                    android:textSize="@dimen/text_size_small"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_gray"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="BTC 0.0002"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/ques"
+                    android:textSize="@dimen/text_size_small"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_gray"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

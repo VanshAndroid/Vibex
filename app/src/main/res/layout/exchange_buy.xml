@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/big_margin_x"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginRight="@dimen/big_margin_x"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bitcoin_logo"
+                />
+            <EditText
+                android:id="@+id/amount_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sailec_regular"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_normal"
+                android:hint="  Amount to buy (BTC)"
+
+                />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/email_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/edPriceBitcoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/sailec_regular"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/small_margin"
+            android:paddingLeft="@dimen/small_margin"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_normal"
+            android:hint="         Price per Bitcoin"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/small_margin"
+            android:background="@color/dark_gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bid NGN 2834427"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|left"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="#1ACE49"
+                android:visibility="invisible"
+                />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Required funds:"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|left"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+            <TextView
+                android:id="@+id/required_bal_cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/requiredFund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|right"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Balance:"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|left"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+            <TextView
+                android:id="@+id/available_bal_cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/walletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|right"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated fees :"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|left"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+            <TextView
+                android:id="@+id/required_fund_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/estimated_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|right"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/very_big_margin"
+            >
+
+            <Button
+                android:id="@+id/exchange_buy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:background="@drawable/rounded_box_blue"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

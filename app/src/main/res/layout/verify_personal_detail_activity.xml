@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/big_margin"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_detail_txt"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_medium_large"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/big_margin"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/sailec_regular"
+                        android:id="@+id/email_hint_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/fname_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:inputType="textEmailAddress"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:padding="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:textColor="@color/dark_gray"
+                        android:fontFamily="@font/sailec_regular"
+                        />
+
+                    <View
+                        android:id="@+id/email_view"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dark_gray"
+                        android:layout_marginTop="@dimen/small_margin"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/email_hint_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small"
+                        android:fontFamily="@font/sailec_regular"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/lname_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:inputType="textEmailAddress"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:padding="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:textColor="@color/dark_gray"
+                        android:fontFamily="@font/sailec_regular"
+                        />
+
+                    <View
+                        android:id="@+id/email_view1"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dark_gray"
+                        android:layout_marginTop="@dimen/small_margin"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Names as displayed on your ID"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/dob_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/email_hint_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:fontFamily="@font/sailec_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/dob_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_normal"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:padding="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:textColor="@color/dark_gray"
+                    android:fontFamily="@font/sailec_regular"
+                    />
+
+                <View
+                    android:id="@+id/email_view2"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/dark_gray"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email_hint_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Citizen"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <EditText
+                android:id="@+id/county_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <View
+                android:id="@+id/email_view3"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+            <TextView
+                android:id="@+id/email_hint_tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BVN Number"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <EditText
+                android:id="@+id/bvn_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="phone"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <View
+                android:id="@+id/email_view4"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+            <TextView
+                android:id="@+id/info_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security measure to help protect against fraud identity theft"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+
+                />
+
+            <Button
+                android:id="@+id/next_step_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="NEXT STEP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:layout_marginBottom="@dimen/big_margin_x"
+                android:gravity="center"
+                android:background="@drawable/rounded_yellow"
+                android:fontFamily="@font/sailec_medium"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

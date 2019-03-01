@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_send"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/big_margin"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_pwd_otp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/light_black"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <TextView
+                android:id="@+id/email_txt_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/light_black"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                >
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <EditText
+                        android:id="@+id/pin1_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sailec_regular"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:singleLine="true"
+                        android:maxLength="1"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:id="@+id/email_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/very_small_margin"
+                        android:background="@color/primary_text_blue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    >
+
+                    <EditText
+                        android:id="@+id/pin2_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sailec_regular"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:singleLine="true"
+                        android:maxLength="1"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:id="@+id/email_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/very_small_margin"
+                        android:background="@color/primary_text_blue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    >
+
+                    <EditText
+                        android:id="@+id/pin3_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sailec_regular"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:singleLine="true"
+                        android:maxLength="1"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:id="@+id/email_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/very_small_margin"
+                        android:background="@color/primary_text_blue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    >
+
+                    <EditText
+                        android:id="@+id/pin4_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sailec_regular"
+                        android:inputType="number"
+                        android:padding="@dimen/small_margin"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <View
+                        android:id="@+id/email_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/very_small_margin"
+                        android:background="@color/primary_text_blue" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/extra_margin"
+                >
+
+                <Button
+                    android:id="@+id/continue_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_sky_blue"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/small_margin"
+            >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_margin="@dimen/small_margin"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/blue_circle"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/tv_contact_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="A"
+                        android:textSize="@dimen/text_size_normal"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/sailec_medium"
+                        />
+
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/very_small_margin"
+                android:gravity="center|left"
+                >
+
+                <TextView
+                    android:id="@+id/tvContactName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/primary_text_gray"
+                    android:text="Name"
+                    android:fontFamily="@font/sailec_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:textColor="@android:color/primary_text_light"
+                    android:text="Phone"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CDDBE9"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

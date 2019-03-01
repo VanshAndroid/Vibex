@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/gradient_theme"
+            >
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:layout_marginRight="@dimen/big_margin_x"
+            android:background="@drawable/yellow_circle"
+            android:gravity="center"
+            android:visibility="gone"
+            android:elevation="2dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J"
+                android:textSize="@dimen/text_size_extra_large"
+                android:fontFamily="@font/sailec_medium"
+                android:textColor="@color/white"
+                android:paddingBottom="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="@dimen/very_small_margin"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/big_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginTop="@dimen/very_small_margin"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Setting"
+                    android:textColor="@color/primary_text_blue"
+                    android:textSize="@dimen/text_size_medium"
+                    android:fontFamily="@font/sailec_medium"
+                    android:layout_gravity="center|left"
+                    />
+
+                <ImageView
+                    android:id="@+id/edit_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_edit"
+                    android:layout_gravity="center|right"
+                    />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/big_margin"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/sailec_regular"
+                        android:id="@+id/fname_hint_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/name_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:inputType="textEmailAddress"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:padding="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:textColor="@color/dark_gray"
+                        android:fontFamily="@font/sailec_regular"
+                        />
+
+                    <View
+                        android:id="@+id/email_view"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dark_gray"
+                        android:layout_marginTop="@dimen/small_margin"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/lname_hint_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_small"
+                        android:fontFamily="@font/sailec_regular"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/lname_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_normal"
+                        android:inputType="textEmailAddress"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:padding="@dimen/small_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:textColor="@color/dark_gray"
+                        android:fontFamily="@font/sailec_regular"
+                        />
+
+                    <View
+                        android:id="@+id/email_view1"
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dark_gray"
+                        android:layout_marginTop="@dimen/small_margin"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/mobile_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telephone Number"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <TextView
+                android:id="@+id/tel_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="phone"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:hint="Tap to Set"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+
+                />
+
+            <View
+                android:id="@+id/email_view2"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/email_layout"
+            >
+            <TextView
+                android:id="@+id/email_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <EditText
+                android:id="@+id/email_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+
+                />
+
+            <View
+                android:id="@+id/email_view3"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/country_layout"
+            >
+
+            <TextView
+                android:id="@+id/country_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <TextView
+                android:editable="false"
+                android:id="@+id/county_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Nigeria"
+                />
+
+            <View
+                android:id="@+id/email_view4"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/notification"
+            >
+            <TextView
+                android:id="@+id/language_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language Notification"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <EditText
+                android:focusable="false"
+                android:clickable="false"
+                android:editable="false"
+                android:id="@+id/notification_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+                android:text="English"
+                />
+
+            <View
+                android:id="@+id/email_view5"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/verification_level"
+            >
+            <TextView
+                android:id="@+id/verification_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verificaton level"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/medium_margin"
+
+                />
+
+            <TextView
+                android:id="@+id/verification_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:text="Level - 0(Not verify yet)"
+                />
+
+            <View
+                android:id="@+id/email_view7"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/two_factor_auth"
+                >
+
+                <TextView
+                    android:id="@+id/two_factor_auth_hint_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="Two - factor authenticaton"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_normal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/two_factor_auth_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_small"
+                    android:inputType="textEmailAddress"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:padding="@dimen/small_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:textColor="@color/dark_gray"
+                    android:text=""
+                    />
+
+                <View
+                    android:id="@+id/email_view6"
+                    android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/dark_gray"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/signout_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="Sign out"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/primary_text_gray"
+                android:padding="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/big_margin"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rounded_card"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:text="SAVE"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginBottom="@dimen/extra_margin"
+                    android:fontFamily="@font/sailec_medium"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

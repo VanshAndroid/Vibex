@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@drawable/gradient_theme"
+            >
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:padding="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+            <TextView
+                android:id="@+id/headerText_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sell_txt"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/extra_large_margin"
+                android:textColor="@color/white"
+                android:padding="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:layout_marginRight="@dimen/big_margin_x"
+            android:gravity="center"
+            android:elevation="2dp"
+            >
+
+            <ImageView
+                android:id="@+id/sell_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/arrow_send"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/big_margin"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/big_margin_x"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From account"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/sailec_regular"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bit"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center|left"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BTC Wallet"
+                    android:textColor="@color/black_light_x"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BTC 0.00626"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    android:textColor="@color/primary_text_gray"
+                    android:layout_marginTop="@dimen/very_small_margin"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_margin"
+            android:hint="Note(optional)"
+            />
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="CONTINUE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_marginTop="@dimen/extra_large_margin"
+            android:layout_marginRight="@dimen/big_margin_x"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:gravity="center"
+            android:background="@drawable/rounded_box_blue"
+            android:fontFamily="@font/sailec_medium"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include
+            android:id="@+id/headerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/header"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="@string/add_bank_txt"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/sailec_medium"
+            android:padding="@dimen/medium_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="Banks in Nigeira"
+            android:textColor="@color/primary_text_gray"
+            android:textSize="@dimen/text_size_small"
+            android:fontFamily="@font/sailec_regular"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/big_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@drawable/rounded_white_box"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:elevation="@dimen/very_small_margin"
+
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gt_bank"
+                />
+
+            <TextView
+                android:id="@+id/bank_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginTop="@dimen/very_small_margin"
+                android:layout_marginRight="@dimen/very_small_margin"
+                android:layout_marginBottom="@dimen/very_small_margin"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="center|left"
+                android:fontFamily="@font/sailec_regular"
+                android:hint="Select Bank"
+                android:textColor="@color/light_black"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/very_big_margin"
+
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Bank Account holder's full name"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                />
+
+            <EditText
+                android:id="@+id/name_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sailec_regular"
+                android:inputType="text"
+                android:padding="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_normal"
+                />
+
+            <View
+                android:id="@+id/name_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/account_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Bank Account number"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                />
+
+            <EditText
+                android:id="@+id/account_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sailec_regular"
+                android:inputType="number"
+                android:padding="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:id="@+id/account_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/next_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/big_margin_x"
+                android:background="@drawable/rounded_card"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

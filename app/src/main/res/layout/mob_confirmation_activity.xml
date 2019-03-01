@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header_1"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/gradient_theme"
+            >
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:layout_marginRight="@dimen/big_margin_x"
+            android:background="@drawable/white_circle_1"
+            android:gravity="center"
+            android:elevation="2dp"
+            >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/mobile"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:layout_marginRight="@dimen/big_margin_x"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/mobile_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mob_confirmation_txt"
+                    android:textSize="@dimen/text_size_medium_large"
+                    android:gravity="center"
+                    android:fontFamily="@font/sailec_regular"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email_hint_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirmation code"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:fontFamily="@font/sailec_regular"
+
+                />
+
+            <EditText
+                android:id="@+id/confirmation_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:paddingLeft="@dimen/small_margin"
+                android:padding="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <View
+                android:id="@+id/email_view1"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+            <TextView
+                android:id="@+id/submit_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:background="@drawable/rounded_yellow"
+                android:fontFamily="@font/sailec_medium"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Instead"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:textColor="@color/primary_text_blue"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <TextView
+                android:id="@+id/resend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend Code"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:textColor="@color/primary_text_blue"
+                android:textSize="@dimen/text_size_medium"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/big_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                android:gravity="center|left"
+                android:background="@drawable/rounded_outline_white_box"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_email_dark_gray_24dp"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    android:text="Support inbox"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/sailec_regular"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_outline_white_box"
+                android:layout_marginTop="@dimen/big_margin_x"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POPULAR QUESTIONS"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:layout_marginLeft="@dimen/big_margin_x"
+                    android:layout_marginBottom="@dimen/big_margin"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/list_questions"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_outline_white_box"
+                android:layout_marginTop="@dimen/big_margin_x"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAIN TOPICS"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:layout_marginLeft="@dimen/big_margin_x"
+                    android:layout_marginBottom="@dimen/big_margin"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+                <LinearLayout
+
+                    android:id="@+id/list_topics"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Still can,t find what you're looking for?"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="@dimen/extra_margin"
+                android:gravity="center"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <Button
+                android:id="@+id/contact_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/extra_margin"
+                android:layout_marginLeft="@dimen/extra_margin"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:background="@drawable/rounded_box_blue"
+                android:fontFamily="@font/sailec_medium"
+                android:text="CONTACT SUPPORT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

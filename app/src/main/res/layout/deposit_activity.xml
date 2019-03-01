@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include
+                android:id="@+id/headerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                layout="@layout/header"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="@string/deposit_txt"
+                android:gravity="center"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/sailec_medium"
+                android:padding="@dimen/medium_margin"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extra_large_margin"
+                android:text="Deposit with Credit Card via"
+                android:textColor="@color/primary_text_gray"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/paystack"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginTop="@dimen/big_margin"
+                android:background="@drawable/rounded_white_box"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:elevation="@dimen/very_small_margin"
+
+                >
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/paystack"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+
+            <LinearLayout
+                android:id="@+id/gtbank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:background="@drawable/rounded_white_box"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:elevation="@dimen/very_small_margin"
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/gt_bank"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GT Collections with GT Bank"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    android:textColor="@color/primary_text_gray"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginRight="@dimen/big_margin"
+
+                    />
+
+
+            </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

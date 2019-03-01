@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_round_lock"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_pin_txt"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/big_margin_x"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/sailec_regular"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/big_margin_x"
+        >
+
+        <EditText
+            android:fontFamily="@font/sailec_medium"
+            android:id="@+id/pin1_ed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:imeOptions="flagNoEnterAction"
+            android:textColor="@color/white"
+            android:focusable="true"
+            />
+
+        <EditText
+            android:fontFamily="@font/sailec_medium"
+            android:id="@+id/pin2_ed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:imeOptions="flagNoEnterAction"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:fontFamily="@font/sailec_medium"
+            android:id="@+id/pin3_ed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:imeOptions="flagNoEnterAction"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:fontFamily="@font/sailec_medium"
+            android:id="@+id/pin4_ed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginRight="@dimen/small_margin"
+            android:background="@drawable/rounded_edit_text"
+            android:imeOptions="actionNext"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin_x"
+        android:gravity="center"
+        android:text="FORGOT PIN ?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_small"
+        android:fontFamily="@font/sailec_regular"
+        />
+
+</LinearLayout>

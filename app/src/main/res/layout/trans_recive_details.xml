@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/big_margin"
+                >
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/t_recive"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/trx_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type "
+                    android:fontFamily="@font/sailec_regular"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:textSize="@dimen/text_size_normal"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ic_wallet_gray_card"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/extra_margin"
+                android:layout_marginBottom="@dimen/extra_margin"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small_margin"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:gravity="left"
+                        android:text="Reference           :"
+                        android:textColor="@color/primary_text_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/trx_ref"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e9e9e9"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text="Total Crypto       :"
+                        android:textColor="@color/primary_text_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+
+
+                    <TextView
+                        android:id="@+id/amount_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e9e9e9"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text="Credit balance   :"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:textColor="@color/primary_text_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/credit_users_wallets"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e9e9e9"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text="Fees                      :"
+                        android:textColor="@color/primary_text_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <TextView
+                        android:id="@+id/trx_fees"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e9e9e9"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text="Date                      :"
+                        android:textColor="@color/primary_text_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/trx_timestamp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:text=""
+                        android:textColor="@color/light_black"
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#e9e9e9"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/small_margin"
+                    android:layout_marginBottom="@dimen/small_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:gravity="left"
+                        android:text="Status                   :"
+                        android:textColor="@color/primary_text_gray"
+                        android:textSize="@dimen/text_size_small" />
+
+
+                    <TextView
+                        android:id="@+id/trx_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        android:fontFamily="@font/sailec_regular"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/small_margin"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

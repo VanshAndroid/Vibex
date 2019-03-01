@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:layout_marginRight="@dimen/big_margin_x"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extra_large_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/auth_two_facter_txt_1"
+                android:textColor="@color/primary_text_gray"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extra_margin"
+                android:layout_marginBottom="@dimen/extra_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:text="Please Enter the 6-digit code from your \n authenticator app"
+                android:textColor="@color/primary_text_gray"
+                android:textSize="@dimen/text_size_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                >
+
+                <!--<EditText
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin1_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    android:focusable="true"
+                    />
+
+                <EditText
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin2_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin3_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin4_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin5_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin6_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />-->
+
+
+                <com.d.OtpView
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/otp_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:itemBackground="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    app:itemCount="6"
+                    app:lineColor="@android:color/transparent"
+                    app:viewType="line"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/next_step_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="CONFIRM"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="center"
+                android:background="@drawable/rounded_sky_blue"
+                android:layout_marginTop="@dimen/extra_margin"
+                android:fontFamily="@font/sailec_medium"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

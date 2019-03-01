@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header_2"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/big_margin_x"
+            >
+
+            <TextView
+                android:id="@+id/email_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Currency"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_box_white"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:elevation="@dimen/very_small_margin"
+                >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/bitcoin_alert"
+                    />
+                <Spinner
+                    android:id="@+id/crypto_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/very_small_margin"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alert me"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:textColor="@color/black_light"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/medium_margin"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radio_gender"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:button="@drawable/radio_button_selector"
+                        android:checked="true"
+                        android:id="@+id/once_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Once-off  "
+                        android:fontFamily="@font/sailec_regular"
+                        android:textSize="@dimen/text_size_very_small"/>
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:button="@drawable/radio_button_selector"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/every_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Every time"
+                        android:fontFamily="@font/sailec_regular"
+                        android:textSize="@dimen/text_size_very_small"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When the price of 1 Bitcoin is"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:textColor="@color/black_light"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/medium_margin"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radio_gender1"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:button="@drawable/radio_button_selector"
+                        android:checked="true"
+                        android:id="@+id/more_than"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More than"
+                        android:fontFamily="@font/sailec_regular"
+                        android:textSize="@dimen/text_size_very_small"/>
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:button="@drawable/radio_button_selector"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/less_than"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Less than"
+                        android:fontFamily="@font/sailec_regular"
+                        android:textSize="@dimen/text_size_very_small"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_large"
+                    />
+                <EditText
+                    android:id="@+id/amt_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    android:hint="Enter amount"
+                    android:inputType="numberDecimal"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rate_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/big_margin_x"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginLeft="@dimen/extra_margin"
+                android:background="@drawable/rounded_box_blue"
+                android:layout_marginTop="@dimen/big_margin"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Alert"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/sailec_medium"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginBottom="50dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

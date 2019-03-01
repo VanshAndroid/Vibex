@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="27161999"
+            android:padding="@dimen/medium_margin"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_amt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3.58003"
+            android:padding="@dimen/medium_margin"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3.58003"
+            android:padding="@dimen/medium_margin"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+        <TextView
+            android:id="@+id/tv_fill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3.58003"
+            android:padding="@dimen/medium_margin"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

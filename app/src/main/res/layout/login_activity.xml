@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/extra_margin"
+
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:src="@mipmap/ic_wallet"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/small_margin"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/very_big_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/email_hint_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sailec_regular"
+                    android:text="Enter Email Address"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <EditText
+                    android:id="@+id/email_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_email_dark_gray_24dp"
+                    android:fontFamily="@font/sailec_regular"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/small_margin"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <View
+                    android:id="@+id/email_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@color/dark_gray" />
+
+                <TextView
+                    android:id="@+id/password_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:fontFamily="@font/sailec_regular"
+                    android:text="Enter Password"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <EditText
+                        android:id="@+id/password_ed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sailec_regular"
+                        android:layout_weight="1"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/small_margin"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/password_visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_gray_eye_24dp"
+                        />
+
+                </LinearLayout>
+
+
+                <!--<EditText
+                    android:id="@+id/password_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_password_dark_gray_24dp"
+                    android:fontFamily="@font/sailec_regular"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/small_margin"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_normal" />-->
+
+                <View
+                    android:id="@+id/password_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@color/dark_gray" />
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="@dimen/very_big_margin"
+                    android:background="@drawable/rounded_box_blue"
+                    android:fontFamily="@font/sailec_regular"
+                    android:gravity="center"
+                    android:text="LOGIN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+
+
+                <TextView
+                    android:id="@+id/forgot_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/big_margin_x"
+                    android:fontFamily="@font/sailec_regular"
+                    android:gravity="center"
+                    android:text="FORGOT PASSWORD"
+                    android:layout_marginBottom="@dimen/extra_margin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_very_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

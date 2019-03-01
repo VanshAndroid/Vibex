@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/big_margin_x"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter a Vibex promotion code here"
+            android:gravity="center"
+            android:fontFamily="@font/sailec_regular"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/primary_text_gray"
+            android:layout_marginTop="@dimen/big_margin"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/extra_large_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/email_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Promotion code"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_small"
+
+                />
+
+            <EditText
+                android:id="@+id/promo_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sailec_regular"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/small_margin"
+                android:paddingLeft="@dimen/small_margin"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:id="@+id/email_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@color/dark_gray" />
+
+            <Button
+                android:id="@+id/apply_promo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:background="@drawable/rounded_box_blue"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:text="APPLY CODE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

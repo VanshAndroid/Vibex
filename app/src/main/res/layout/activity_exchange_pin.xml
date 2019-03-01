@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_round_lock"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/big_margin"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter 4 digit PIN"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/light_black"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                >
+
+                <!--<EditText
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin1_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    android:focusable="true"
+                    />
+
+                <EditText
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin2_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:fontFamily="@font/sailec_medium"
+                    android:id="@+id/pin3_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />
+
+                <EditText
+                    android:singleLine="true"
+                    android:fontFamily="@font/scailec_medium"
+                    android:id="@+id/pin4_ed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:maxLength="1"
+                  c  android:gravity="center"
+                    android:inputType="number"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    />-->
+
+
+                <com.d.OtpView
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/otp_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:itemBackground="@drawable/rounded_edit_text"
+                    android:textColor="@color/white"
+                    app:itemCount="4"
+                    app:lineColor="@android:color/transparent"
+                    app:viewType="line"
+                    />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/extra_margin"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/rounded_box_blue"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:text="PROCEED"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:background="#00000000"
+    android:id="@+id/withDrawView"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Withdraw money to"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:textColor="@color/sky_light"
+            android:fontFamily="@font/sailec_medium"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CDCDCD"
+            android:layout_marginTop="@dimen/big_margin"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/add_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/extra_margin"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add bank beneficiary"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

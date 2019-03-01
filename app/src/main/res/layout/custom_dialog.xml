@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is this your bank account? "
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/black_light"
+        android:padding="@dimen/small_margin"
+        android:fontFamily="@font/sailec_medium"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginTop="@dimen/big_margin_x"
+        />
+
+    <TextView
+        android:id="@+id/alert_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:fontFamily="@font/sailec_regular"
+        android:text="@string/bank_alert"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/black_light"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/extra_margin"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginBottom="@dimen/very_big_margin"
+        android:orientation="horizontal"
+        android:gravity="right|center"
+        >
+
+        <TextView
+            android:id="@+id/negative_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:layout_marginRight="@dimen/extra_large_margin"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/sailec_regular"
+            />
+
+        <TextView
+            android:id="@+id/positive_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/extra_margin"
+            android:text="YES"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/sailec_regular"
+            android:textSize="@dimen/text_size_normal" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

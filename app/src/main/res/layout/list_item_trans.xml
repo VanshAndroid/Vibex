@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:paddingBottom="@dimen/medium_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_email_dark_gray_24dp"
+                    android:layout_margin="@dimen/medium_margin"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/payment_type_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="Widthdraw free"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:textColor="@color/black_light_x"
+                    />
+
+                <TextView
+                    android:id="@+id/trans_date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:text="10th January"
+                    android:textSize="@dimen/text_size_very_small_x"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/black_light_x"
+                    android:paddingTop="@dimen/very_small_margin"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/trans_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NGN 200000"
+                    android:textSize="@dimen/text_size_small"
+                    android:fontFamily="@font/sailec_regular"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:lines="1"
+                    android:textColor="@color/red"
+                    />
+
+                <TextView
+                    android:id="@+id/trx_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/medium_margin"
+                    android:layout_marginBottom="@dimen/medium_margin"
+                    android:text="Referance"
+                    android:textSize="@dimen/text_size_very_small_x"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/black_light_x"
+                    android:paddingTop="@dimen/very_small_margin"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/transaction_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_very_small"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/black_light_x"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="@dimen/very_small_margin"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        />
+
+</LinearLayout>

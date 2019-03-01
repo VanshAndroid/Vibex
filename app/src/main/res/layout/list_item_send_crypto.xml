@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ethereum_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:background="@drawable/rounded_white_box"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:elevation="@dimen/very_small_margin"
+        android:visibility="visible"
+        android:layout_margin="@dimen/big_margin"
+
+        >
+
+        <ImageView
+            android:id="@+id/crypto_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_margin="@dimen/small_margin"
+            />
+
+        <TextView
+            android:id="@+id/crypto_name"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ethereum"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:textColor="@color/primary_text_gray"
+            android:fontFamily="@font/sailec_regular"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_marginRight="@dimen/big_margin"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

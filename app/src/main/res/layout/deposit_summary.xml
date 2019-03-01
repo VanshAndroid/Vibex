@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/extra_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Total Deposit amount"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/totalamount_tv"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text=""
+                android:textColor="@color/black_light_x"
+                android:textSize="@dimen/text_size_large" />
+
+            <View
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:background="@color/gray_dark"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Payment Fee"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/trans_fee"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium" />
+
+            <View
+                android:layout_marginTop="@dimen/big_margin"
+                android:background="@color/gray_dark"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text="Current wallet balance"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/current_wallet_balance"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:text=""
+                android:textColor="@color/black_light_x"
+                android:textSize="@dimen/text_size_large" />
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/very_big_margin"
+                android:background="@drawable/rounded_box_blue"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:text="PROCEED"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

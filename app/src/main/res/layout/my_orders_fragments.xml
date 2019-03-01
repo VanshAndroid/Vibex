@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/learn_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/learn_more_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="NGN 0.00"
+                android:padding="@dimen/medium_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 days trading volume: BTC 0.00"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:textColor="@color/primary_text_gray"
+                android:fontFamily="@font/sailec_medium"
+                android:textSize="@dimen/text_size_normal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/small_margin"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Currency"
+                    android:padding="@dimen/medium_margin"
+                    android:textSize="@dimen/text_size_small"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Amount"
+                    android:padding="@dimen/medium_margin"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginRight="@dimen/very_small_margin"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Price"
+                    android:padding="@dimen/medium_margin"
+                    android:textSize="@dimen/text_size_small"
+                    android:layout_marginLeft="@dimen/very_small_margin"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fill"
+                    android:textSize="@dimen/text_size_small"
+                    android:padding="@dimen/medium_margin"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_gray"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/exchange_buy_sell"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginBottom="@dimen/big_margin"
+        android:src="@drawable/plus" />
+
+</RelativeLayout>

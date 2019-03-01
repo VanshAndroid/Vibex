@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:padding="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:fontFamily="@font/sailec_medium"
+            android:layout_gravity="center|left"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:text="Successful"
+            android:fontFamily="@font/sailec_regular"
+            />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/extra_large_margin"
+                android:src="@drawable/success_bit" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/big_margin_x"
+                android:fontFamily="@font/sailec_medium"
+                android:text="Withdrawal Completed successfully."
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/withdraw_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    android:layout_marginRight="@dimen/big_margin"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    android:fontFamily="@font/sailec_regular"
+                    android:text="Withdrawn to bank account xxxx4950: NGN196"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/continue_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/extra_large_margin"
+                android:layout_marginLeft="@dimen/extra_large_margin"
+                android:layout_marginRight="@dimen/extra_large_margin"
+                android:background="@drawable/rounded_box_white"
+                android:fontFamily="@font/sailec_medium"
+                android:text="CONTINUE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Vibex</string>
+
+    <string name="ob_header1">SIMPLE ABROAD CALLS</string>
+    <string name="ob_header2">FREE WONEP TO WONEP</string>
+    <string name="ob_header3">NO HIDDEN CHARGES OR FEES</string>
+
+    <string name="ob_desc1">Wonep converts international calls to local calls without WiFi or data</string>
+    <string name="ob_desc2">If the person you’re calling also has Wonep the call will be entirely free</string>
+    <string name="ob_desc3">We have a very small charge for non-Wonep calls to mobiles or landlines</string>
+
+    <string name="forgot_pwd">Enter your email address and we will send\nan otp to help you reset your password.</string>
+    <string name="email_txt">We have sent an email to s*****9@gmail.com\nPlease click on the link to reset your\npassword.</string>
+    <string name="create_pin">Create Pin</string>
+    <string name="sign_up_header_text">Set up your Wallet Account</string>
+    <string name="create_pin_txt">Create a 4 digit PIN that you will use\nwhen making transactions</string>
+    <string name="sign_in_txt">Please enter the 4-digit code that was\nsent to your </string>
+    <string name="forget_pwd_otp">To reset your password please enter the 4-digit code that was sent to your </string>
+    <string name="vibex_wallet">Welcome to Vibex\nWallet</string>
+    <string name="vibex_wallet_text">Vibex keeps your Bitcoin safe while making it easy to use\n\nWe\'re excited to have you on board.</string>
+    <string name="home_frag_container2_text">Share Vibex and get free BitCoin</string>
+    <string name="home_frag_container2_text1">Did you know you can invite your friends to Vibex and get free Bitcoin ?
+        \n\nGet NGN100.00 worth of bitcoin for each friend who signs up and buys oe sells at least NGN 5,000.00 Bitcoin using your special
+        code.\n\nP.S Your frinds will get NGN 100.00 worth of Bitcoin too!</string>
+    <string name="mob_verification_txt">Vibex uses your mobile\nnumber to protect your\naccount.</string>
+    <string name="mob_confirmation_txt">Enter the confirmation code\nsent via SMS to </string>
+    <string name="mob_verify_txt">Thanks for verifying your\nmobile number</string>
+    <string name="info_verified">Your information has been \nverified.</string>
+    <string name="personal_detail_txt">Enter your personal details as\ndisplayed on your official\nidentity document.</string>
+    <string name="auth_two_facter_txt">Two-factor authentication keeps\nyour account more secure by\nrequiring both your password and\your phone to login.</string>
+    <string name="recovery_txt">Keep your recovery code in a safe\nplace.</string>
+    <string name="recovery_txt_1">Without it there will be on way to\nregain access to your account it you\nlose your phone</string>
+    <string name="auth_two_facter_txt_1">Set your Vibex accont in your\nauthentication app, using your\nrecovery code from previous step.</string>
+    <string name="auth_two_facter_pin">Enter the 6 digit code from\nyour authenticator app below</string>
+    <string name="info_success">Two-factor authentication\nhas been successfully\nenabled</string>
+    <string name="add_bank_txt">Add your bank detail to withdraw money\nfrom Vibex</string>
+    <string name="deposit_txt">How would you like to add money to your\nVibex Wallet.</string>
+    <string name="make_deposit">Using GT Collections, make a payment with the following detail to the Vibex merchant. This option is only available for GT Bank customers via GT bank app.</string>
+    <string name="await_msg">Dont forget to make that deposit!\nwhen we recive your deposit it\nwill be added to your Vibex wallet </string>
+    <string name="price_alert_txt">Create alerts to let you know when the\nBitcoin price changes</string>
+
+    <string name="bank_alert">To protect your security you can only withdraw money into an account in your name.\n\nPlease use the full name shown on your bank statements otherwise the withdrawal may be cancelled.</string>
+    <string name="verification_txt">Vibex follows the same global compliance standards as traditional financial institutions to ensure the platform is secure for all.</string>
+    <string name="verification_txt_2">We ask for your mobile number plus some basic information about who you are to confirm your identity</string>
+    <string name="verification_txt_3">We respect your privacy, taking every precaution to secure your personal data while making it easier to use Bitcoin</string>
+    <string name="upload_document">Please upload a color scan detailed color photo of the front and back of your national identity card, or the front of your passport driver,s license or permanent voter,s card\n\nit should clearly show your details(names, date of birth and photo)</string>
+    <string name="doc_txt">Are you sure document is entirely within the frame and easy to read?</string>
+    <string name="security_txt">For an introduction to two-factor authentication, see What is two-factor authentication.\n\n Your Bitcoin is valuable, Protecting it with two-factor authentication is strongly recommended. In this article we will show you how to set up two-factor authentication for your Vibex wallet.</string>
+    <string name="invite_txt">Invite your friends to Vibex and ask them\nto enter your code\n\nAfter they sign up and buySell or sell\nNGN 5000.00 or more\n(exchange excluded), you will both recive\nNGN 100.00 worth of Bitcoin.</string>
+    <string name="sell_txt">Convert - BTC 0.3421\ninto NGN 500000.00</string>
+    <string name="send_txt">Send to\n+234 0816480635</string>
+    <string name="sell_success">Before you can buySell you must add\nmoney to your Vibex Wallet.</string>
+    <string name="text_title_frag_1_1">Identity under review</string>
+    <string name="sub_text_title_frag_1_1">Thank you for providing the required documentation. We are now busy reviewing your information. Due to high volume of new customers, this can take up to five business days.</string>
+    <string name="addreess_not_found">Enter a valid mobile number, email\naddress or Bitcoin address to send\nBitcoin to anyone</string>
+    <string name="verify_identity">Before you can buy or sell Bitcoin you must\nverify your identity</string>
+    <string name="verify_mobile">Before you can buy or sell Bitcoin you must\nverify your Mobile Number</string>
+    <string name="verify_bvn">Before you can Withdraw you must\nverify your BVN Number</string>
+    <string name="dlg_nointernet">Please Check Internet Connection</string>
+    <string name="verify_mobile_1">Before you can exchange buy or exchange sell you must\nverify your Mobile Number</string>
+    <string name="verify_doc">Before you can Withdraw you must\nverify your KYC Document</string>
+
+
+    <string name="title_home"></string>
+    <string name="title_Wallets">Wallets</string>
+    <string name="title_Transaction">Transaction</string>
+    <string name="title_price_alert">Price Alerts</string>
+    <string name="title_Promotions">Promotions</string>
+    <string name="title_Exchange">Exchange</string>
+    <string name="title_Settings">Settings</string>
+    <string name="title_help_center">Help Center</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_Wallets</item>
+        <item>@string/nav_item_Transaction</item>
+        <item>@string/nav_item_Price_Alert</item>
+        <item>@string/nav_item_Promotions</item>
+        <item>@string/nav_item_Exchange</item>
+        <item>@string/nav_item_Settings</item>
+        <item>@string/nav_item_Help_Center</item>
+    </string-array>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_Wallets">Wallets</string>
+    <string name="nav_item_Transaction">Transaction</string>
+    <string name="nav_item_Price_Alert">Price Alerts</string>
+    <string name="nav_item_Promotions">Promotions</string>
+    <string name="nav_item_Exchange">Exchange</string>
+    <string name="nav_item_Settings">Settings</string>
+    <string name="nav_item_Help_Center">Help Center</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="month_array">
+        <item>January 2018</item>
+        <item>February 2018</item>
+        <item>March 2018</item>
+        <item>April 2018</item>
+        <item>May 2018</item>
+        <item>June 2018</item>
+        <item>July 2018</item>
+        <item>August 2018</item>
+        <item>September 2018</item>
+        <item>October 2018</item>
+        <item>November 2018</item>
+        <item>Decemberc2018</item>
+
+    </string-array>
+
+    <string-array name="crypto_array">
+        <item>BTC</item>
+        <item>ETH</item>
+    </string-array>
+
+    <string-array name="bank_array">
+        <item>Access bank</item>
+        <item>Citibank</item>
+        <item>Ecobank Nigeria</item>
+        <item>Fidelity Bank Nigeria</item>
+        <item>Zenith Bank</item>
+        <item>Wema Bank</item>
+        <item>Guaranty Trust Bank</item>
+        <item>Heritage Bank PLC</item>
+        <item>Keystone Bank Limited</item>
+        <item>Skye Bank</item>
+        <item>Sterling Bank</item>
+        <item>Union Bank of Nigeria</item>
+
+    </string-array>
+
+
+    <array name="autosize_text_sizes">
+        <item>12sp</item>
+        <item>24sp</item>
+        <item>36sp</item>
+        <item>48sp</item>
+        <item>60sp</item>
+        <item>72sp</item>
+    </array>
+
+</resources>

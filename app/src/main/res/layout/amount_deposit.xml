@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+        <include
+            android:id="@+id/headerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/header"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:text="How much would you like to deposit"
+            android:gravity="center"
+            android:textColor="@color/black_light"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/sailec_medium"
+            android:padding="@dimen/medium_margin"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/extra_large_margin"
+        android:gravity="center|top"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:layout_marginTop="@dimen/big_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                >
+
+                <TextView
+                    android:id="@+id/local_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="@dimen/big_margin"
+                    android:textSize="@dimen/text_size_large"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/black_light"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/email_hint_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sailec_regular"
+                    android:text="Amount"
+                    android:textColor="@color/sky"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <EditText
+                    android:id="@+id/amount_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/sailec_regular"
+                    android:inputType="number"
+                    android:padding="@dimen/small_margin"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginRight="@dimen/big_margin_x"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <View
+                    android:id="@+id/email_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:layout_marginRight="@dimen/big_margin_x"
+                    android:background="@color/sky" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_margin"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximum Deposit"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|left"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+            <TextView
+                android:id="@+id/depositLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_gravity="center|right"
+                android:textSize="@dimen/text_size_small"
+                android:fontFamily="@font/sailec_regular"
+                android:textColor="@color/primary_text_gray"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/sendCode_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_marginTop="@dimen/extra_large_margin"
+            android:layout_marginRight="@dimen/extra_margin"
+            android:layout_marginLeft="@dimen/extra_margin"
+            android:gravity="center"
+            android:background="@drawable/rounded_yellow_1"
+            android:fontFamily="@font/sailec_medium"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/contact"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proof of identity"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium_large"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/sailec_regular"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/big_margin_x"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="@string/upload_document"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/primary_text_gray"
+        android:fontFamily="@font/sailec_regular"
+
+        />
+
+    <TextView
+        android:id="@+id/take_photo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/extra_margin"
+        android:layout_marginRight="@dimen/extra_margin"
+        android:layout_marginTop="@dimen/very_big_margin"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/sailec_medium"
+        android:gravity="center"
+        android:text="TAKE PHOTO"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/select_file_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/extra_margin"
+        android:layout_marginRight="@dimen/extra_margin"
+        android:layout_marginTop="@dimen/very_big_margin"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/sailec_medium"
+        android:gravity="center"
+        android:text="SELECT A FILE"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
+
+</LinearLayout>

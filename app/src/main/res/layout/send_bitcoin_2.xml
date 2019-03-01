@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@drawable/gradient_theme"
+            >
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:padding="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+            <TextView
+                android:id="@+id/headerText_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/extra_large_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:fontFamily="@font/sailec_regular"
+                android:gravity="center"
+                android:padding="@dimen/medium_margin"
+                android:text="@string/send_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:layout_marginRight="@dimen/big_margin_x"
+            android:gravity="center"
+            android:elevation="2dp"
+            >
+
+            <ImageView
+                android:id="@+id/next_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/arrow_send"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/big_margin"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:text="Available "
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/available_btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="0.00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:visibility="invisible"
+            android:id="@+id/spiner_crypto_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:id="@+id/crypto_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_extra_large"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <EditText
+            android:id="@+id/ngn_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:hint="0.00"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/text_size_extra_large"
+            android:layout_marginRight="@dimen/big_margin"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toEndOf="@+id/crypto_code_tv"
+            app:layout_constraintTop_toBottomOf="@+id/available_btc" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="29dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crypto_code_tv"
+            app:srcCompat="@drawable/bitcoin_logo" />
+
+        <TextView
+            android:id="@+id/btc_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:text="-NGN 0.00"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="@dimen/big_margin"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/ngn_amount" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="93dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.021" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/send"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Document Type"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium_large"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/sailec_regular"
+        />
+
+    <LinearLayout
+        android:id="@+id/bvn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginRight="@dimen/big_margin_x"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/contact_circle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BVN"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/driving_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginRight="@dimen/big_margin_x"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/car_circle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Driving License"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passport_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginRight="@dimen/big_margin_x"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/passport_circle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Passport"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/other_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginRight="@dimen/big_margin_x"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/other_circle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Utility Bill"
+            android:layout_marginLeft="@dimen/big_margin_x"
+            android:textSize="@dimen/text_size_normal"
+            android:fontFamily="@font/sailec_regular"
+            android:textColor="@color/primary_text_gray"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

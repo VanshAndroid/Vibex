@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/success"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        />
+
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="@dimen/extra_large_margin"
+        android:layout_marginRight="@dimen/extra_large_margin"
+        android:background="@drawable/rounded_box_white"
+        android:fontFamily="@font/sailec_medium"
+        android:text="DONE"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_normal" />
+
+
+</FrameLayout>

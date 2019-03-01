@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="@dimen/big_margin_x"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_margin"
+                >
+
+                <TextView
+                    android:id="@+id/btc_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BTC Account"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/sailec_regular"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="@dimen/big_margin"
+                    />
+                <ImageView
+                    android:id="@+id/currencyLogo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/big_margin"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_very_small"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+            <TextView
+                android:id="@+id/balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BTC 0.00"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_very_small"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/medium_margin"
+                />
+            <TextView
+                android:id="@+id/available_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BTC 0.00"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/small_margin"
+
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/recive_sell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="Receive"
+                android:layout_marginRight="@dimen/big_margin"
+                android:textColor="@color/primary_text_blue"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="@font/sailec_medium"
+                />
+
+            <TextView
+                android:id="@+id/withdraw_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="130dp"
+                android:fontFamily="@font/sailec_medium"
+                android:text="Withdraw"
+                android:textColor="@color/primary_text_blue"
+                android:textSize="@dimen/text_size_normal"
+
+                />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

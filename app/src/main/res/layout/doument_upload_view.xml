@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/big_margin"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sailec_regular"
+            android:gravity="center"
+            android:text="@string/doc_txt"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/big_margin"
+            android:layout_height="200dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_marginRight="@dimen/very_small_margin"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Front Side"
+                    android:gravity="center"
+                    android:padding="@dimen/very_small_margin"
+                    android:textSize="@dimen/text_size_normal"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_blue"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_camera_icon"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="@dimen/very_small_margin"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back Side"
+                    android:textSize="@dimen/text_size_normal"
+                    android:gravity="center"
+                    android:fontFamily="@font/sailec_regular"
+                    android:textColor="@color/primary_text_blue"
+                    android:padding="@dimen/very_small_margin"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewDocBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_camera_icon"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/use_photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:background="@drawable/rounded_box_blue"
+            android:fontFamily="@font/sailec_regular"
+            android:gravity="center"
+            android:text="USE THIS PHOTO"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+
+        <TextView
+            android:id="@+id/retakePhoto_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/big_margin"
+            android:fontFamily="@font/sailec_regular"
+            android:gravity="center"
+            android:text="RETAKE PHOTO"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_small" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

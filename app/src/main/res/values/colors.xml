@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#316DF8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF9400</color>
+
+    <color name="primary_text_blue">#2877fd</color>
+    <color name="primary_text_gray">#676767</color>
+    <color name="primary_light_purple">#5549E8</color>
+    <color name="tab_background_selected">#FF9400</color>
+
+
+    <color name="purple">#842DCE</color>
+    <color name="sky">#3777F7</color>
+    <color name="sky_light">#2699fb</color>
+    <color name="dark_gray">#676767</color>
+    <color name="light_black">#1A1A1A</color>
+    <color name="blue">#0755B1</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_light">#FBFBFB</color>
+    <color name="black">#070707</color>
+    <color name="black_light">#3A3A3A</color>
+    <color name="black_light_x">#303030</color>
+    <color name="sky_blue">#006DF0</color>
+    <color name="yellow">#FFBC36</color>
+    <color name="red">#FA3131</color>
+    <color name="gray_dark">#515151</color>
+    <color name="colorPrimaryLight">#ed8a96</color>
+    <color name="windowBackground">#cfd8dc</color>
+    <color name="light_sky">#36C8FF</color>
+    <color name="purple_light">#7B3FF2</color>
+</resources>

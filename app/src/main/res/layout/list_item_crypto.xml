@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/cryptoName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/primary_text_gray"
+        android:layout_marginLeft="@dimen/big_margin"
+        />
+
+    <TextView
+        android:id="@+id/cryptoValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text_gray"
+        android:text="12331313513"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:textSize="16dp"
+        />
+
+</LinearLayout>

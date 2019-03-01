@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/purple_light"
+        android:gravity="center"
+        >
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/white_circle_1"
+            >
+
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mob_security"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/small_margin"
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginRight="@dimen/big_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Is your information safe ?"
+            android:textSize="@dimen/text_size_medium_large"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/sailec_medium"
+            android:layout_marginTop="@dimen/big_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/verification_txt_3"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/primary_text_gray"
+            android:fontFamily="@font/sailec_regular"
+            android:layout_marginTop="@dimen/big_margin"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/gray_circle"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/gray_circle"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/blue_circle"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/done_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/extra_margin"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginTop="@dimen/very_big_margin"
+                android:background="@drawable/rounded_edit_text"
+                android:fontFamily="@font/sailec_medium"
+                android:gravity="center"
+                android:text="DONE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="@dimen/big_margin_x"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_card_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/eyes"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_title_frag_1_1"
+                android:textColor="@color/primary_text_gray"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/small_margin"
+                android:fontFamily="@font/sailec_medium"
+                />
+
+            <TextView
+                android:id="@+id/body_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_text_title_frag_1_1"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginBottom="@dimen/big_margin"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deposit over all the time  NGN 200,000.00"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:visibility="gone"
+                android:fontFamily="@font/sailec_regular"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Withdraw over  all the time NGN 200,000.00"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:visibility="gone"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+            <Button
+                android:id="@+id/btn_upload"
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:text="Upload Document"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_card"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginBottom="@dimen/big_margin"
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are giving priority to customers who are closing"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/text_size_small"
+                android:layout_margin="@dimen/big_margin"
+                android:visibility="gone"
+                android:fontFamily="@font/sailec_regular"
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

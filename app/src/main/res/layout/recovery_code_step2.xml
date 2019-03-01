@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/header"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/big_margin_x"
+        android:layout_marginRight="@dimen/big_margin_x"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recovery_txt"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_medium"
+            android:fontFamily="@font/sailec_bold"
+            android:textColor="@color/black_light_x"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_large_margin"
+            android:layout_marginBottom="@dimen/extra_large_margin"
+            android:fontFamily="@font/sailec_medium"
+            android:gravity="center"
+            android:text="@string/recovery_txt_1"
+            android:textColor="@color/primary_text_gray"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/secret_code_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/extra_large_margin"
+            android:fontFamily="@font/sailec_medium"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_content_copy_black_24dp"
+            android:text="XSHSHJKSJKFJKCKJJKNDSVJK\NJDSJ555"
+            android:textColor="@color/primary_text_blue"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/next_step_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:gravity="center"
+            android:background="@drawable/rounded_sky_blue"
+            android:fontFamily="@font/sailec_medium"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        android:padding="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:fontFamily="@font/sailec_medium"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/extra_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/await_deposit"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Await deposit"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sailec_medium"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/await_msg"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/sailec_regular"
+                android:layout_marginTop="@dimen/very_big_margin"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/rounded_box_white"
+                android:layout_marginLeft="@dimen/extra_margin"
+                android:layout_marginRight="@dimen/extra_margin"
+                android:layout_marginTop="@dimen/extra_margin"
+                android:text="DONE"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/primary_text_gray"
+                android:fontFamily="@font/sailec_medium"
+                />
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
